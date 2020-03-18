@@ -40,7 +40,6 @@ def dbTest():
    
     print('Insert Success')
     
-    test
 ### auth - LEE HAN
 ### 1시간 단위 스케줄러 (추후 개발)
 # def testScheduler():  
