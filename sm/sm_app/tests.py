@@ -16,7 +16,7 @@ def requestData(urlText):
 
     return data2, pages
 
-### auth - KIM JONG UK
+### auth - KIM JONG UK, LEE HAN
 ### MongoDB 연결 후 데이터 저장
 def dbTest():
     conn = MongoClient('127.0.0.1')
