@@ -35,11 +35,11 @@ def dbTest():
         url = requests.get(urlStr.__add__(i.__str__()))
         (data2, temp) = requestData(url.text)
         collect.insert(data2)
-    
+     
 
    
     print('Insert Success')
-    
+
 ### auth - LEE HAN
 ### 1시간 단위 스케줄러 (추후 개발)
 # def testScheduler():  
