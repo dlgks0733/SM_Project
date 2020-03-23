@@ -21,8 +21,10 @@ def requestData(urlText):
 def dbTest():
     conn = MongoClient('127.0.0.1')
 
-    db = conn.test_db
+    db = conn.sm_db
     collect = db.collect
+
+    collect.remove()
 
     urlStr = 'https://8oi9s0nnth.apigw.ntruss.com/corona19-masks/v1/stores/json?page='
     url = requests.get(urlStr.__add__('1'))
@@ -39,6 +41,9 @@ def dbTest():
 
    
     print('Insert Success')
+
+
+# dbTest()
 
 ### auth - LEE HAN
 ### 1시간 단위 스케줄러 (추후 개발)
